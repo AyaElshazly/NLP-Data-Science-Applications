@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2">
+        <rdfs:comment>This otology about anime chatbot</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasLength -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Length"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasReleasedate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasReleasedate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Release_Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#hasStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime_Name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Length -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Length">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Release_Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Release_Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Source">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Anime"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Continuous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Continuous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Status"/>
+        <untitled-ontology-2:Anime_Name>Detective Conan</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Finished -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Finished">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Status"/>
+        <untitled-ontology-2:Anime_Name>Death Note</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Length"/>
+        <untitled-ontology-2:Anime_Name>Naruto</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Manga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Manga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Source"/>
+        <untitled-ontology-2:Anime_Name>Jujutsu Kaisen</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Manhwa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Manhwa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Source"/>
+        <untitled-ontology-2:Anime_Name>The God Of High School</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#New -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#New">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Release_Date"/>
+        <untitled-ontology-2:Anime_Name>Demon Slayer</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Old -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Old">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Release_Date"/>
+        <untitled-ontology-2:Anime_Name>Berserk</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Science_Fiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Science_Fiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Short -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Short">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/6/untitled-ontology-2#Length"/>
+        <untitled-ontology-2:Anime_Name>Death Note</untitled-ontology-2:Anime_Name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
